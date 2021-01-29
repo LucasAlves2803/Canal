@@ -1,9 +1,9 @@
 def mmc(a,b):
-    mc = (a*b)/ mdc(a,b) // Fórmula que calcula o mmc a partir do mdc 
+    mc = (a*b)/ mdc(a,b) # FÃ³rmula que calcula o mmc a partir do mdc 
     return mc
 
 
-def mdc(a,b): // Algoritmo que calcula o mdc
+def mdc(a,b): # Algoritmo que calcula o mdc
     r = a % b
     while(r != 0):
         a = b
@@ -12,7 +12,7 @@ def mdc(a,b): // Algoritmo que calcula o mdc
     return b
 
 
-def mmc_n(): // Função que calcula o mmc de uma lista de número
+def mmc_n(): # FunÃ§Ã£o que calcula o mmc de uma lista de nÃºmero
     for i in range(1,len(lista)):
         lista[i] = mmc(lista[i-1],lista[i])
     return lista[i]
